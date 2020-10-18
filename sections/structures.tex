@@ -1,0 +1,57 @@
+\newpage
+\section{Übersicht über Strukturen und Homomorphismen}
+\begin{tabular}{p{.4\textwidth}|p{.4\textwidth}}
+    Struktur &  Homomorphismus\\
+    \hline\hline
+    Magma: $(M,*)$
+     & $\phi(m*n)=\phi(m)*\phi(n)$ \\
+     \hline
+    Halbgruppe ist assoziatives Magma. & \\
+    \hline
+    Monoid ist Halbgruppe mit neutralem Element. & 
+     $\phi(e)=e$
+     
+    \\\hline
+    Gruppe ist Monoid und alle Elemente sind invertierbar. &
+     $\phi(x^{-1})=\phi(x)^{-1}$ \newline
+     $\text{Kern}\phi=\phi^{-1}(\{e\})$ ist Untergruppe \newline
+     $\phi(G)$ ist Untergruppe \newline
+     $\phi$ injektiv $\gdw \phi^{-1}(\{e\})=\{e\}$ \newline
+    
+    \\\hline
+    Normalteiler $N$ von $G$: $\forall g: gNg^{-1}=N$ &
+     Jeder Kern ist Normalteiler
+    
+    \\\hline
+    Faktorgruppe $G/N$ mit $(gN)\cdot(hN):=ghN$ &
+     $\text{Kern}\phi=N \Rightarrow gN \mapsto \phi(g)$ ist Isomorphismus \newline
+     $H$ Untergruppe: $H/(N\cap H) \cong (HN)/N$
+    
+    \\\hline
+    Gruppenoperationen $G\times M \to M$ mit $e\cdot m = m$ und $(gh)m = g(hm)$ \newline Bahn, Stabilisator, Fixpunkt, transitiv &
+    
+    \\\hline
+    Ring $(R,+,\cdot)$ ist bzgl $+$ abelsche Gruppe und bzgl $\cdot$ Monoid mit Distributivgesetzen.
+    &
+     $\text{Kern}\phi=\phi^{-1}({0})$ \newline
+     $\phi(R^\times)\subset S^\times$
+    \\\hline
+    Integritätsbereich ist kommutativer, nullteilerfreier Ring.
+    \\\hline
+    Körper ist kommutativer Ring und $R^\times = R\setminus {0}$
+    \\\hline
+    Ideal: $\forall x\in I, r\in R: xr,rx \in I$ ist ein Normalteiler bzgl $+$
+    \\\hline 
+    Faktorring $R/I$ &
+     $I\subset \text{Kern}\phi \Rightarrow \exists \Tilde{\phi}: \phi=\Tilde{\phi}\circ\phi$
+    \\\hline
+    $R$-Modul $M$ ist abelsche Gruppe mit \newline
+    $(r+s)m=rm+sm$ \newline
+    $r(m+n)=rm+rn$ \newline
+    $(rs)m=r(sm)$ \newline
+    $1m=m$ &
+     Module über Körpern sind Verktorräume
+    \\\hline
+    $R$-Algebra A mit $\sigma:R\to A$ mit $\sigma(r)a=a\sigma(r)$
+    
+\end{tabular}

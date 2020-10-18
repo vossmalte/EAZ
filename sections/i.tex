@@ -1,0 +1,37 @@
+\section{Teilbarkeit}
+
+\defi{} $d$ teilt $n$ $\Leftrightarrow$ $\exists t: t \cdot d = n$ \\
+Begriffe: Teiler, Vielfaches, ggT, kgV
+
+\bem{ggT} $ggT(0,m)=m$, $ggT(m,n) = ggT(m,n-m)$
+
+\defi{Euklidischer Algorithmus.} $a\stackrel{!}{<}b$. Solange $b-a>0$: $b:= b-a$
+
+\bem{} mit dem eukl. Alg. kann man auch den ggT als Linearkombination darstellen.
+
+\defi{Kongruenz} $k\equiv l (\mod n)$ $\Leftrightarrow n | k-l$
+
+\bem{}
+\begin{itemize}
+    \item $g=ggT(n,m)$ $ \Rightarrow ggT(\frac{n}{g},\frac{m}{g}) = 1$
+    \item $m,n$ teilerfremd und $m \mid nu$ $\Leftrightarrow m\mid u$
+    \item $kgV(m,n) \cdot ggT(m,n) = m \cdot n$
+\end{itemize}
+
+\defi{Primzahlen} ...
+
+\bem{Fundamentalsatz der Arithmetik:} Jede Zahl hat eine Primfaktorzerlegung
+
+\defi{$p$-adische Bewertung.} $v_p(k)$ ist die höchste Potenz von $p$, die $k$ teilt: $p^{v_p(k)} \mid k$
+
+\bem{}
+\begin{itemize}
+    \item $b \mid a \gdw \forall p \in \mathbb{P}: v_p(b)\leq v_p(a)$
+    \item ggT von $a$ und $b$ ist $\prod_{p\in\mathbb{P}}p^{\min(v_p(a),v_p(b)}$
+    \item kgV von $a$ und $b$ ist $\prod_{p\in\mathbb{P}}p^{\max(v_p(a),v_p(b)}$
+\end{itemize}
+
+\satz{kl. von Fermat:} $p\in\mathbb{P}$ und $c\in\mathbb{Z}$ $\Rightarrow p \mid c^p-c$ { \footnotesize (hiermit kann prim wiederlegt werden)}
+
+\bem{Lücken:} $k\in\mathbb{N}$. Zwischen $M:=(k+2)!+2$ und $M+k$ liegt keine Primzahl
+

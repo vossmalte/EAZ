@@ -1,0 +1,57 @@
+\section{Gruppen}
+
+\subsection{Magmen}
+
+\defi{Magma} $(M,*)$ ist eine Menge mit einer Verknüpfung $*:M\times M \to M$
+\begin{itemize}
+    \item ist die Verknüpfung assoziativ, so nennt man das Magma Halbgruppe
+    \item Eine Halbgruppe mit neutralem Element heißt Monoid
+    \item es gibt auch kommutative Magmen
+    \item Bsp: Abb(D,D) mit Komposition ist ein Magma. Leeres Magma. Triviales Magma.
+    \item $U\subset M$ heißt Untermagma wenn $U*U\subset U$. Untermagmen kann man schneiden und diese bleiben Untermagmen
+    \item Sei $X\subset M$, das Magmenerzeugnis $\langle X\rangle$ von $X$ ist der Schnitt alles Untermagmen, die $X$ enthalten.
+    \item für assoz. Magmen gilt: $\langle X\rangle = \cup_{n\in\mathbb{N}}X_n$ mit $X_1=X, X_{n+1}=X*X_n$ 
+\end{itemize}
+
+\subsection{Der Gruppenbegriff}
+
+\defi{Gruppe} 
+\begin{itemize}
+    \item Sei $(M,*)$ ein Monoid mit neutralem Element $e$. Ein Element $x$ heißt invertierbar, wenn ein $y \epsilon M$ exisitiert, sodass $x*y=y*x=e$. Bezeichne mit $M^x$ die Menge aller invertierbaren Elemente in M.
+    \item Eine Gruppe ist ein Monoid, in dem jedes Element invertierbar ist.
+    \item Sei $(M,*)$ eine Gruppe. $(M,*)$ ist kommutativ/abelsch wenn sie als Magma kommutativ ist.
+\end{itemize}
+
+\defi{Untergruppe}
+Sei $(G,*)$ eine Gruppe. Dann ist eine Untergruppe von G ein nichtleeres Untermagma U, das unter der Inversenbildung abgeschlossen ist. \\
+Schreibe: $U \leq \ G$ 
+\begin{itemize}
+    \item Die Gruppe $(\mathbb{Z},+)$ ist eine Untergruppe von $(\mathbb{Q},+)$.
+    \item Die Gruppe der ganzen Zahlen $\mathbb{Z}$ mit der Addition als Verknüpfung. Die triviale Untergruppe ist die ${0}$. AUßerdem gilt für jede natürliche Zahl n die Teilmenge \\
+    $n \mathbb{Z}:={nk \vert k \epsilon \mathbb{Z}}$ \\
+    Wir halten fest: Die Untergruppen von $\mathbb{Z}$ sind genau die Mengen $n \mathbb{Z}$ mit $n \epsilon \mathbb{N}_{0}$
+\end{itemize}
+
+\bem{} Durchschnitt von Untergruppen: Sei G Gruppe, I nichtleere Menge und für jedes $i \epsilon I$ gibt es eine Untergruppe $U_i$ von G geben. Dann ist $\cap_{i \epsilon I} U_i$ eine Untergruppe von G.
+
+\defi{Gruppenerzeugnis}: Sei M Teilmenge der Gruppe G, sei I die Menge aller Untergruppen von G, die M enthalten. \\
+$\langle M \rangle:=\cap_{i \epsilon I} i$ 
+ist Gruppenerzeugnis von M oder die von M erzeugte Untergruppe von G.
+\begin{itemize}
+    \item Es ist die kleinste Untergruppe von G, die M enthält. 
+\end{itemize}
+
+\defi{zyklisch}: Eine Gruppe G heißt zyklisch, wenn es ein Element $a\epsilon G$, sodass $G=\langle{a}\rangle$
+
+\defi{Ordnung} Die Mächtigkeit/Kardinalität einer Gruppe nennt man auch Ordnung. Die Ordnung eines Elemtens $g\epsilon G$ ist definiert als die Ordnung der von g erzeugten Untergruppe.
+\begin{itemize}
+    \item Wenn $g\epsilon G$ endliche Ordnung, dann ist diese gleich der kleinsten natürlichen Zahl k, für die $g_k=e_G$ gilt.
+\end{itemize}
+
+\bem{} Satz von Lagrange: Sei G endl. Gruppe und H Untergruppe von G. Dann gilt: $\#H\mid\#G$
+
+\defi{Index}: Wenn $H \leq \ G$ zwei Gruppen, dann heißt die Anzahl der Äquivalenzklassen der Index von H in G. Schreibe $(G:H)$. \\
+Es gilt demnach für alle Gruppen $(G:H)=\frac{\#G}{\#H}$.
+
+\subsection{Homomorphismen zwischen Gruppen}
+\defi{Gruppenhomomorphismus}: Sei $(G,*)$ und $(H,\cdot)$ zwei Gruppen. Ein Homomorphismus von G nach H ist eine Abbildung $f:G\rightarrow H$, für die gilt:
